@@ -48,7 +48,7 @@ class FdbImport(object):
             ws = self.wb.active
             # ws = self.wb['big_data']
             for row in ws.rows:
-                line = 'Insert Into () Values ('
+                line = "InsertIntoValues"
                 for cell in row:
                     line += ','+str(cell.value)
                 line += '\n'
